@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# Golangci-lint configuration
+# Golangci-lint configuration   
 
 Kept uses the `Golangci-lint` linter to ensure good code quality.
 This page describes the configuration required
