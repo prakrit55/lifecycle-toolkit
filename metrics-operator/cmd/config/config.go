@@ -8,7 +8,7 @@ import (
 
 //go:generate moq -pkg fake -skip-ensure -out ../fake/provider_mock.go . Provider:MockProvider
 type Provider interface {
-	GetConfig() (*rest.Config, error)
+	GetConfig() (*rest.Config, error)  
 }
 
 type kubeConfigProvider struct {
