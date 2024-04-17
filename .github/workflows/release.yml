@@ -142,7 +142,7 @@ jobs:
       packages: write
       id-token: write
     env:
-      IMAGE_NAME: ghcr.io/keptn/${{ matrix.config.name }}
+      IMAGE_NAME: ghcr.io/prakrit55/${{ matrix.config.name }}
       DATETIME: ${{ needs.release-please.outputs.DATETIME }}
       BUILD_TIME: ${{ needs.release-please.outputs.BUILD_TIME }}
       GIT_SHA: ${{ needs.release-please.outputs.GIT_SHA }}
