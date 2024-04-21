@@ -52,13 +52,13 @@ jobs:
           echo "DATETIME=$DATETIME" >> "$GITHUB_OUTPUT"
           echo "BUILD_TIME=$BUILD_TIME" >> "$GITHUB_OUTPUT"
 
-      - name: Run release please
-        uses: google-github-actions/release-please-action@a37ac6e4f6449ce8b3f7607e4d97d0146028dc0b # v4
-        id: release
-        with:
-          token: ${{ secrets.KEPTN_BOT_TOKEN }}
-          default-branch: main
-          signoff: "keptn-bot <86361500+keptn-bot@users.noreply.github.com>"
+      # - name: Run release please
+      #   uses: google-github-actions/release-please-action@a37ac6e4f6449ce8b3f7607e4d97d0146028dc0b # v4
+      #   id: release
+      #   with:
+      #     token: ${{ secrets.KEPTN_BOT_TOKEN }}
+      #     default-branch: main
+      #     signoff: "keptn-bot <86361500+keptn-bot@users.noreply.github.com>"
 
       - name: Debug info
         env:
@@ -161,7 +161,7 @@ jobs:
         with:
           registry: "ghcr.io"
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets._GITHUB_TOKEN }}
 
       - name: Set up Cosign
         uses: sigstore/cosign-installer@59acb6260d9c0ba8f4a2f9d9b48431a222b68e20 # v3.5.0
