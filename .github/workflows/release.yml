@@ -142,7 +142,7 @@ jobs:
       packages: write
       id-token: write
     env:
-      IMAGE_NAME: ghcr.io/keptn/${{ matrix.config.name }}
+      IMAGE_NAME: docker.io/prakrit55/${{ matrix.config.name }}
       DATETIME: ${{ needs.release-please.outputs.DATETIME }}
       BUILD_TIME: ${{ needs.release-please.outputs.BUILD_TIME }}
       GIT_SHA: ${{ needs.release-please.outputs.GIT_SHA }}
@@ -159,7 +159,7 @@ jobs:
       - name: Login to GitHub Container Registry
         uses: docker/login-action@e92390c5fb421da1463c202d546fed0ec5c39f20 # v3.1.0
         with:
-          registry: "ghcr.io"
+          registry: "docker.io"
           username: ${{ github.actor }}
           password: ${{ secrets._GITHUB_TOKEN }}
 
