@@ -1,5 +1,59 @@
 # Changelog
 
+## [2.2.0](https://github.com/prakrit55/lifecycle-toolkit/compare/cert-manager-v2.1.1...cert-manager-v2.2.0) (2024-04-22)
+
+
+### Features
+
+* add global value for imagePullPolicy ([#2807](https://github.com/prakrit55/lifecycle-toolkit/issues/2807)) ([5596d12](https://github.com/prakrit55/lifecycle-toolkit/commit/5596d1252b164e469aa122c0ebda8526ccbca888))
+* **cert-manager:** introduce a no-op implementation of ICertificateWatcher ([#2708](https://github.com/prakrit55/lifecycle-toolkit/issues/2708)) ([6b5f424](https://github.com/prakrit55/lifecycle-toolkit/commit/6b5f424f8cf11ca276c73217b1dc837ec40b4102))
+* introduce configurable support of cert-manager.io CA injection ([#2811](https://github.com/prakrit55/lifecycle-toolkit/issues/2811)) ([d6d83c7](https://github.com/prakrit55/lifecycle-toolkit/commit/d6d83c7f67a18a4b30aabe774a8fa2c93399f301))
+
+
+### Bug Fixes
+
+* **helm-chart:** remove double templating of annotations ([#2770](https://github.com/prakrit55/lifecycle-toolkit/issues/2770)) ([b7a1d29](https://github.com/prakrit55/lifecycle-toolkit/commit/b7a1d291223eddd9ac83425c71c8c1a515f25f58))
+* introduce missing Role into keptn-cert-manager helm charts ([#3435](https://github.com/prakrit55/lifecycle-toolkit/issues/3435)) ([16afdaa](https://github.com/prakrit55/lifecycle-toolkit/commit/16afdaaf4ae56179d0f725ae9f9e9ae96709f042))
+* security vulnerabilities ([#3230](https://github.com/prakrit55/lifecycle-toolkit/issues/3230)) ([1d099d7](https://github.com/prakrit55/lifecycle-toolkit/commit/1d099d7a4c9b5e856de52932693b97c29bea3122))
+
+
+### Other
+
+* bump Go base images and pipelines version to 1.21 ([#3218](https://github.com/prakrit55/lifecycle-toolkit/issues/3218)) ([de01ca4](https://github.com/prakrit55/lifecycle-toolkit/commit/de01ca493b307d8c27701552549b982e22281a2e))
+* bump go version to 1.21 ([#3006](https://github.com/prakrit55/lifecycle-toolkit/issues/3006)) ([8236c25](https://github.com/prakrit55/lifecycle-toolkit/commit/8236c25da7ec3768e76d12eb2e8f5765a005ecfa))
+* bump helm chart dependencies ([#2991](https://github.com/prakrit55/lifecycle-toolkit/issues/2991)) ([49ee351](https://github.com/prakrit55/lifecycle-toolkit/commit/49ee3511fd6e425ac095bd7f16ecd1dae6258eb0))
+* bump helm charts versions ([#3303](https://github.com/prakrit55/lifecycle-toolkit/issues/3303)) ([19cbe9f](https://github.com/prakrit55/lifecycle-toolkit/commit/19cbe9fda082015d4a61d23c1276d599f6370cec))
+* bump keptn-cert-manager version in helm charts ([#2802](https://github.com/prakrit55/lifecycle-toolkit/issues/2802)) ([681a050](https://github.com/prakrit55/lifecycle-toolkit/commit/681a0507020aedcd86a0321ab7230f8072f62f0b))
+* release cert-manager 2.0.0 ([#2358](https://github.com/prakrit55/lifecycle-toolkit/issues/2358)) ([f42bb71](https://github.com/prakrit55/lifecycle-toolkit/commit/f42bb7182ba801fb27e288a74fb731c343b8392e))
+* release cert-manager 2.1.0 ([#2994](https://github.com/prakrit55/lifecycle-toolkit/issues/2994)) ([cc21f79](https://github.com/prakrit55/lifecycle-toolkit/commit/cc21f79096624a1439ceb367b9c05313cd8a3bc5))
+* release cert-manager 2.1.1 ([#3182](https://github.com/prakrit55/lifecycle-toolkit/issues/3182)) ([ce8192f](https://github.com/prakrit55/lifecycle-toolkit/commit/ce8192f64000f3bb0468f1552b4335f9d0b8126b))
+* revert helm charts bump ([#2806](https://github.com/prakrit55/lifecycle-toolkit/issues/2806)) ([2e85214](https://github.com/prakrit55/lifecycle-toolkit/commit/2e85214ecd6112e9f9af750d9bde2d491dc8ae73))
+* update chart dependencies ([#3179](https://github.com/prakrit55/lifecycle-toolkit/issues/3179)) ([b8efdd5](https://github.com/prakrit55/lifecycle-toolkit/commit/b8efdd50002231a06bac9c5ab02fcdbadea4c60d))
+* upgrade helm chart versions ([#2801](https://github.com/prakrit55/lifecycle-toolkit/issues/2801)) ([ad26093](https://github.com/prakrit55/lifecycle-toolkit/commit/ad2609373c4819fc560766e64bc032fcfd801889))
+
+
+### Dependency Updates
+
+* bump golang.org/x/net to v0.23.0 ([#3388](https://github.com/prakrit55/lifecycle-toolkit/issues/3388)) ([e9c1dda](https://github.com/prakrit55/lifecycle-toolkit/commit/e9c1dda3489117422160d53467d2155b1ca2bad3))
+* update dependency kubernetes-sigs/controller-tools to v0.14.0 ([#2797](https://github.com/prakrit55/lifecycle-toolkit/issues/2797)) ([71f20a6](https://github.com/prakrit55/lifecycle-toolkit/commit/71f20a63f8e307d6e94c9c2df79a1258ab147ede))
+* update dependency kubernetes-sigs/kustomize to v5.4.1 ([#3394](https://github.com/prakrit55/lifecycle-toolkit/issues/3394)) ([2dda172](https://github.com/prakrit55/lifecycle-toolkit/commit/2dda17232aab5542929a5fa73378cd2399a2f5e5))
+* update golang docker tag to v1.21.9 ([#3384](https://github.com/prakrit55/lifecycle-toolkit/issues/3384)) ([e4f1a6a](https://github.com/prakrit55/lifecycle-toolkit/commit/e4f1a6adefc2670a6c18efbaf416aee80eb2584a))
+* update helm release common to v0.1.4 ([#3114](https://github.com/prakrit55/lifecycle-toolkit/issues/3114)) ([12b2e58](https://github.com/prakrit55/lifecycle-toolkit/commit/12b2e58e085fd40cf5c04ca0e5eb071823777701))
+* update keptn/common helm chart to 0.1.3 ([#2831](https://github.com/prakrit55/lifecycle-toolkit/issues/2831)) ([29187fa](https://github.com/prakrit55/lifecycle-toolkit/commit/29187fa7eeab148b7188b4c3f05317cc291c15e4))
+* update kubernetes packages to v0.28.5 (patch) ([#2714](https://github.com/prakrit55/lifecycle-toolkit/issues/2714)) ([192c0b1](https://github.com/prakrit55/lifecycle-toolkit/commit/192c0b16fc0852dca572448d8caeb113b0e21d40))
+* update kubernetes packages to v0.28.6 (patch) ([#2827](https://github.com/prakrit55/lifecycle-toolkit/issues/2827)) ([da080fa](https://github.com/prakrit55/lifecycle-toolkit/commit/da080fafadef25028f9e4b1a78d8a862e58b47e7))
+* update kubernetes packages to v0.28.7 (patch) ([#3062](https://github.com/prakrit55/lifecycle-toolkit/issues/3062)) ([8698803](https://github.com/prakrit55/lifecycle-toolkit/commit/8698803ff60b71d658d60bfc0c6b8b3d4282798d))
+* update kubernetes packages to v0.28.8 (patch) ([#3300](https://github.com/prakrit55/lifecycle-toolkit/issues/3300)) ([435e722](https://github.com/prakrit55/lifecycle-toolkit/commit/435e722776b69c6e7acbf3631d81cdeafc9815ec))
+* update module github.com/go-logr/logr to v1.4.1 ([#2726](https://github.com/prakrit55/lifecycle-toolkit/issues/2726)) ([3598999](https://github.com/prakrit55/lifecycle-toolkit/commit/3598999e1cfce6ee528fb5fb777c0b7b7c21678a))
+* update module github.com/stretchr/testify to v1.9.0 ([#3171](https://github.com/prakrit55/lifecycle-toolkit/issues/3171)) ([d334790](https://github.com/prakrit55/lifecycle-toolkit/commit/d3347903ad91c33ba4bf664277c53024eb02825a))
+* update module golang.org/x/net to v0.20.0 ([#2786](https://github.com/prakrit55/lifecycle-toolkit/issues/2786)) ([8294c7b](https://github.com/prakrit55/lifecycle-toolkit/commit/8294c7b471d7f4d33961513e056c36ba14c940c7))
+* update module golang.org/x/net to v0.21.0 ([#3091](https://github.com/prakrit55/lifecycle-toolkit/issues/3091)) ([44489ea](https://github.com/prakrit55/lifecycle-toolkit/commit/44489ea8909c5c81a2115b952bba9e3416ddd85e))
+* update module golang.org/x/net to v0.22.0 ([#3341](https://github.com/prakrit55/lifecycle-toolkit/issues/3341)) ([d58df5c](https://github.com/prakrit55/lifecycle-toolkit/commit/d58df5cac90241f625e05e68ec157827c2d85bbd))
+* update module golang.org/x/net to v0.24.0 ([#3395](https://github.com/prakrit55/lifecycle-toolkit/issues/3395)) ([16d436c](https://github.com/prakrit55/lifecycle-toolkit/commit/16d436c84f92aea191e0503f4dc1fa058bc1f083))
+* update module k8s.io/apimachinery to v0.28.9 ([#3433](https://github.com/prakrit55/lifecycle-toolkit/issues/3433)) ([a75d65e](https://github.com/prakrit55/lifecycle-toolkit/commit/a75d65e6528509276af4060aea6f85a02d03ad30))
+* update module sigs.k8s.io/controller-runtime to v0.16.4 ([#3033](https://github.com/prakrit55/lifecycle-toolkit/issues/3033)) ([f576707](https://github.com/prakrit55/lifecycle-toolkit/commit/f57670729a18cfdb391c3af5ffdd92de6a330ee5))
+* update module sigs.k8s.io/controller-runtime to v0.16.5 ([#3073](https://github.com/prakrit55/lifecycle-toolkit/issues/3073)) ([599e2d8](https://github.com/prakrit55/lifecycle-toolkit/commit/599e2d8712ed7d7b614026a0038d238ed0833b37))
+
 ## [2.1.1](https://github.com/keptn/lifecycle-toolkit/compare/cert-manager-v2.1.0...cert-manager-v2.1.1) (2024-03-19)
 
 
