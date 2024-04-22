@@ -160,7 +160,7 @@ jobs:
         uses: docker/login-action@e92390c5fb421da1463c202d546fed0ec5c39f20 # v3.1.0
         with:
           registry: "ghcr.io"
-          username: ${{ github.actor }}
+          username: prakrit55
           password: ${{ secrets._GITHUB_TOKEN }}
 
       - name: Set up Cosign
