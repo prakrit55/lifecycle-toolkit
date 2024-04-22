@@ -1,5 +1,36 @@
 # Changelog
 
+## [2.0.4](https://github.com/prakrit55/lifecycle-toolkit/compare/deno-runtime-v2.0.3...deno-runtime-v2.0.4) (2024-04-22)
+
+
+### Other
+
+* release deno-runtime 2.0.0 ([#2416](https://github.com/prakrit55/lifecycle-toolkit/issues/2416)) ([e616292](https://github.com/prakrit55/lifecycle-toolkit/commit/e616292922e08dbcf6d918d1d2c52a348f884cf7))
+* release deno-runtime 2.0.1 ([#2967](https://github.com/prakrit55/lifecycle-toolkit/issues/2967)) ([beb8cc1](https://github.com/prakrit55/lifecycle-toolkit/commit/beb8cc1e085e4ba8734017339821d6da1e602ac8))
+* release deno-runtime 2.0.2 ([#2977](https://github.com/prakrit55/lifecycle-toolkit/issues/2977)) ([97b4aec](https://github.com/prakrit55/lifecycle-toolkit/commit/97b4aec6bd2d850a04d1e78e076d53775426af9e))
+* release deno-runtime 2.0.3 ([#3173](https://github.com/prakrit55/lifecycle-toolkit/issues/3173)) ([2271c8c](https://github.com/prakrit55/lifecycle-toolkit/commit/2271c8ca3e457cb744f6f692465be32c3a698598))
+* revert "deps(deno-runtime): update libcrypto3 and libssl3" ([7e18270](https://github.com/prakrit55/lifecycle-toolkit/commit/7e1827088848dc486afb007c354155d2f9a5ed5c))
+
+
+### Dependency Updates
+
+* **deno-runtime:** update libcrypto3 and libssl3 ([#2953](https://github.com/prakrit55/lifecycle-toolkit/issues/2953)) ([882b442](https://github.com/prakrit55/lifecycle-toolkit/commit/882b44222fee306704674a91875ffdf1ccc7a3af))
+* update denoland/deno docker tag to alpine-1.39.0 ([#2684](https://github.com/prakrit55/lifecycle-toolkit/issues/2684)) ([5456786](https://github.com/prakrit55/lifecycle-toolkit/commit/5456786ed7128766016b065e262fad1a4a4f3ee6))
+* update denoland/deno docker tag to alpine-1.39.2 ([#2721](https://github.com/prakrit55/lifecycle-toolkit/issues/2721)) ([8e1e088](https://github.com/prakrit55/lifecycle-toolkit/commit/8e1e088ba31de2444a306be5750fa5972e224b28))
+* update denoland/deno docker tag to alpine-1.39.4 ([#2795](https://github.com/prakrit55/lifecycle-toolkit/issues/2795)) ([5a5d5f4](https://github.com/prakrit55/lifecycle-toolkit/commit/5a5d5f4fc05e5f10f069db71137751a59febcb20))
+* update denoland/deno docker tag to alpine-1.40.2 ([#2886](https://github.com/prakrit55/lifecycle-toolkit/issues/2886)) ([cad0c57](https://github.com/prakrit55/lifecycle-toolkit/commit/cad0c578950fc6dbd0102764508a05d2a86d749f))
+* update denoland/deno docker tag to alpine-1.40.3 ([#2943](https://github.com/prakrit55/lifecycle-toolkit/issues/2943)) ([fde53ce](https://github.com/prakrit55/lifecycle-toolkit/commit/fde53ce523438fc6b040d9df7951aa1ec04a82f4))
+* update denoland/deno docker tag to alpine-1.40.4 ([#3031](https://github.com/prakrit55/lifecycle-toolkit/issues/3031)) ([839c61e](https://github.com/prakrit55/lifecycle-toolkit/commit/839c61ec6a34b9b2a44f65cc2f0231c38f1d6f30))
+* update denoland/deno docker tag to alpine-1.40.5 ([#3060](https://github.com/prakrit55/lifecycle-toolkit/issues/3060)) ([4b25727](https://github.com/prakrit55/lifecycle-toolkit/commit/4b25727e1a75e99f3b3b709aeeb3c49e5845c0b3))
+* update denoland/deno docker tag to alpine-1.41.0 ([#3126](https://github.com/prakrit55/lifecycle-toolkit/issues/3126)) ([a60e4c6](https://github.com/prakrit55/lifecycle-toolkit/commit/a60e4c6da63f36ac06cbdaf4994bbae8c062ac18))
+* update denoland/deno docker tag to alpine-1.41.1 ([#3165](https://github.com/prakrit55/lifecycle-toolkit/issues/3165)) ([036a1d4](https://github.com/prakrit55/lifecycle-toolkit/commit/036a1d45e1b851bd9b2a55648f95c47367638d30))
+* update denoland/deno docker tag to alpine-1.41.2 ([#3262](https://github.com/prakrit55/lifecycle-toolkit/issues/3262)) ([53a32b2](https://github.com/prakrit55/lifecycle-toolkit/commit/53a32b2d65cacec787ffe653b81df68d87fd70d4))
+* update denoland/deno docker tag to alpine-1.41.3 ([#3279](https://github.com/prakrit55/lifecycle-toolkit/issues/3279)) ([8a1eebf](https://github.com/prakrit55/lifecycle-toolkit/commit/8a1eebf2242118f3e582605494b0fd917641dda6))
+* update denoland/deno docker tag to alpine-1.42.0 ([#3367](https://github.com/prakrit55/lifecycle-toolkit/issues/3367)) ([19163f7](https://github.com/prakrit55/lifecycle-toolkit/commit/19163f7f1315c24e6dffd01c59a4bf6da25f5318))
+* update denoland/deno docker tag to alpine-1.42.1 ([#3379](https://github.com/prakrit55/lifecycle-toolkit/issues/3379)) ([01c3bdb](https://github.com/prakrit55/lifecycle-toolkit/commit/01c3bdb4e8e50bc5475ccb945d6ce866060defbb))
+* update denoland/deno docker tag to alpine-1.42.3 ([#3412](https://github.com/prakrit55/lifecycle-toolkit/issues/3412)) ([0918913](https://github.com/prakrit55/lifecycle-toolkit/commit/09189130ff002cadbf4652bc8f094defa31eb58d))
+* update denoland/deno docker tag to alpine-1.42.4 ([#3444](https://github.com/prakrit55/lifecycle-toolkit/issues/3444)) ([6ab3737](https://github.com/prakrit55/lifecycle-toolkit/commit/6ab3737e5a00dc0c4893dba18436cee24e7db115))
+
 ## [2.0.3](https://github.com/keptn/lifecycle-toolkit/compare/deno-runtime-v2.0.2...deno-runtime-v2.0.3) (2024-03-19)
 
 
