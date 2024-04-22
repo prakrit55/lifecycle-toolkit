@@ -1,5 +1,121 @@
 # Changelog
 
+## [0.9.4](https://github.com/prakrit55/lifecycle-toolkit/compare/metrics-operator-v0.9.3...metrics-operator-v0.9.4) (2024-04-22)
+
+
+### Features
+
+* add `step` and `aggregation` fields for `kubectl get KeptnMetric` ([#2556](https://github.com/prakrit55/lifecycle-toolkit/issues/2556)) ([abe00fc](https://github.com/prakrit55/lifecycle-toolkit/commit/abe00fc337eafbb65f510e4864984094288e4f6b))
+* add global value for imagePullPolicy ([#2807](https://github.com/prakrit55/lifecycle-toolkit/issues/2807)) ([5596d12](https://github.com/prakrit55/lifecycle-toolkit/commit/5596d1252b164e469aa122c0ebda8526ccbca888))
+* add Thanos metrics provider ([#3358](https://github.com/prakrit55/lifecycle-toolkit/issues/3358)) ([7cc1622](https://github.com/prakrit55/lifecycle-toolkit/commit/7cc1622edc1c7e6ffa138389df2b7e15f1c2b8db))
+* introduce configurable support of cert-manager.io CA injection ([#2811](https://github.com/prakrit55/lifecycle-toolkit/issues/2811)) ([d6d83c7](https://github.com/prakrit55/lifecycle-toolkit/commit/d6d83c7f67a18a4b30aabe774a8fa2c93399f301))
+* **metrics-operator:** introduce v1 API version ([#3266](https://github.com/prakrit55/lifecycle-toolkit/issues/3266)) ([d034a4f](https://github.com/prakrit55/lifecycle-toolkit/commit/d034a4f4abbbff31596bc790842a4ba765e82e1e))
+* **metrics-operator:** support Cortex metrics provider ([#3361](https://github.com/prakrit55/lifecycle-toolkit/issues/3361)) ([8f0c9ca](https://github.com/prakrit55/lifecycle-toolkit/commit/8f0c9ca2ec677ee04a33e938b64cc72c059a6df2))
+* **metrics-operator:** update controller logic to support multiple metric values ([#2190](https://github.com/prakrit55/lifecycle-toolkit/issues/2190)) ([42b805c](https://github.com/prakrit55/lifecycle-toolkit/commit/42b805c73035566c4dbfc25d4e6fe67e58e3a497))
+* **metrics-operator:** use v1 API in operator logic ([#3269](https://github.com/prakrit55/lifecycle-toolkit/issues/3269)) ([e9a584b](https://github.com/prakrit55/lifecycle-toolkit/commit/e9a584bc28ce6306362c722fed8849f5d5be0bda))
+
+
+### Bug Fixes
+
+* **helm-chart:** introduce cert volumes to metrics and lifecycle operators ([#3247](https://github.com/prakrit55/lifecycle-toolkit/issues/3247)) ([b7744dd](https://github.com/prakrit55/lifecycle-toolkit/commit/b7744dd36289b9d7c843f1679481830a843f90ac))
+* **helm-chart:** remove double templating of annotations ([#2770](https://github.com/prakrit55/lifecycle-toolkit/issues/2770)) ([b7a1d29](https://github.com/prakrit55/lifecycle-toolkit/commit/b7a1d291223eddd9ac83425c71c8c1a515f25f58))
+* **metrics-operator:** flush error message after successful retrieval of value from provider ([#2754](https://github.com/prakrit55/lifecycle-toolkit/issues/2754)) ([89d5a47](https://github.com/prakrit55/lifecycle-toolkit/commit/89d5a47412690f4752b627329c960d01dafddabf))
+* **metrics-operator:** remove duplicated CA injection annotations ([#3232](https://github.com/prakrit55/lifecycle-toolkit/issues/3232)) ([c1472be](https://github.com/prakrit55/lifecycle-toolkit/commit/c1472be33a74d5df1f4231ff6c5e449b83e40402))
+* **metrics-operator:** use correct from/to timestamps for analyses using `timeframe.recent` ([#2755](https://github.com/prakrit55/lifecycle-toolkit/issues/2755)) ([ba3d8a5](https://github.com/prakrit55/lifecycle-toolkit/commit/ba3d8a5279404cd766ac643893f830b30bab8954))
+* security vulnerabilities ([#3230](https://github.com/prakrit55/lifecycle-toolkit/issues/3230)) ([1d099d7](https://github.com/prakrit55/lifecycle-toolkit/commit/1d099d7a4c9b5e856de52932693b97c29bea3122))
+
+
+### Other
+
+* backport helm release versions ([#3241](https://github.com/prakrit55/lifecycle-toolkit/issues/3241)) ([074bb16](https://github.com/prakrit55/lifecycle-toolkit/commit/074bb165a9a70c8daa187f215f2dd74f3159b95d))
+* bump Go base images and pipelines version to 1.21 ([#3218](https://github.com/prakrit55/lifecycle-toolkit/issues/3218)) ([de01ca4](https://github.com/prakrit55/lifecycle-toolkit/commit/de01ca493b307d8c27701552549b982e22281a2e))
+* bump go version to 1.21 ([#3006](https://github.com/prakrit55/lifecycle-toolkit/issues/3006)) ([8236c25](https://github.com/prakrit55/lifecycle-toolkit/commit/8236c25da7ec3768e76d12eb2e8f5765a005ecfa))
+* bump helm chart dependencies ([#2991](https://github.com/prakrit55/lifecycle-toolkit/issues/2991)) ([49ee351](https://github.com/prakrit55/lifecycle-toolkit/commit/49ee3511fd6e425ac095bd7f16ecd1dae6258eb0))
+* bump helm charts versions ([#3303](https://github.com/prakrit55/lifecycle-toolkit/issues/3303)) ([19cbe9f](https://github.com/prakrit55/lifecycle-toolkit/commit/19cbe9fda082015d4a61d23c1276d599f6370cec))
+* **metrics-operator:** cleanup APIs ([#3270](https://github.com/prakrit55/lifecycle-toolkit/issues/3270)) ([a683c9a](https://github.com/prakrit55/lifecycle-toolkit/commit/a683c9a794fcb76017c4cb4fb6d3547de5c2c2ca))
+* **metrics-operator:** make Dynatrace DQL provider oAuth URL configurable ([#2713](https://github.com/prakrit55/lifecycle-toolkit/issues/2713)) ([b77191c](https://github.com/prakrit55/lifecycle-toolkit/commit/b77191cfa8d4aec4942cd12fdc6791b25c48d5ce))
+* re-generate CRD manifests ([#2830](https://github.com/prakrit55/lifecycle-toolkit/issues/2830)) ([c0b1942](https://github.com/prakrit55/lifecycle-toolkit/commit/c0b1942e8f2ddd177776ed681432016d81805724))
+* release metrics-operator 0.9.0 ([#2393](https://github.com/prakrit55/lifecycle-toolkit/issues/2393)) ([9c5c549](https://github.com/prakrit55/lifecycle-toolkit/commit/9c5c54919269d890a6b426d21ffa18961fa08088))
+* release metrics-operator 0.9.1 ([#2789](https://github.com/prakrit55/lifecycle-toolkit/issues/2789)) ([a43f429](https://github.com/prakrit55/lifecycle-toolkit/commit/a43f429a4a69f16cfa4a2c8908cfd260c3a6eff6))
+* release metrics-operator 0.9.2 ([#2993](https://github.com/prakrit55/lifecycle-toolkit/issues/2993)) ([6c050a5](https://github.com/prakrit55/lifecycle-toolkit/commit/6c050a5b62dc2a2a7e10b61b0dbb98b31b5058da))
+* release metrics-operator 0.9.3 ([#3183](https://github.com/prakrit55/lifecycle-toolkit/issues/3183)) ([dce666f](https://github.com/prakrit55/lifecycle-toolkit/commit/dce666f00fee716b9837055d46c421f922cb7652))
+* revert helm charts bump ([#2806](https://github.com/prakrit55/lifecycle-toolkit/issues/2806)) ([2e85214](https://github.com/prakrit55/lifecycle-toolkit/commit/2e85214ecd6112e9f9af750d9bde2d491dc8ae73))
+* update chart dependencies ([#3179](https://github.com/prakrit55/lifecycle-toolkit/issues/3179)) ([b8efdd5](https://github.com/prakrit55/lifecycle-toolkit/commit/b8efdd50002231a06bac9c5ab02fcdbadea4c60d))
+* upgrade helm chart versions ([#2801](https://github.com/prakrit55/lifecycle-toolkit/issues/2801)) ([ad26093](https://github.com/prakrit55/lifecycle-toolkit/commit/ad2609373c4819fc560766e64bc032fcfd801889))
+
+
+### Docs
+
+* fix indentation issues and adjust linter rules ([#3028](https://github.com/prakrit55/lifecycle-toolkit/issues/3028)) ([034dae3](https://github.com/prakrit55/lifecycle-toolkit/commit/034dae357ae8b51c75479a81560abbf1fb0a1798))
+* remove old docs folder and replace with new one ([#2825](https://github.com/prakrit55/lifecycle-toolkit/issues/2825)) ([e795c5a](https://github.com/prakrit55/lifecycle-toolkit/commit/e795c5a6845ca1fb19ea31239e42bac7a6a4f042))
+
+
+### Dependency Updates
+
+* bump golang.org/x/net to v0.23.0 ([#3388](https://github.com/prakrit55/lifecycle-toolkit/issues/3388)) ([e9c1dda](https://github.com/prakrit55/lifecycle-toolkit/commit/e9c1dda3489117422160d53467d2155b1ca2bad3))
+* update dependency kubernetes-sigs/controller-tools to v0.14.0 ([#2797](https://github.com/prakrit55/lifecycle-toolkit/issues/2797)) ([71f20a6](https://github.com/prakrit55/lifecycle-toolkit/commit/71f20a63f8e307d6e94c9c2df79a1258ab147ede))
+* update dependency kubernetes-sigs/kustomize to v5.4.1 ([#3394](https://github.com/prakrit55/lifecycle-toolkit/issues/3394)) ([2dda172](https://github.com/prakrit55/lifecycle-toolkit/commit/2dda17232aab5542929a5fa73378cd2399a2f5e5))
+* update golang docker tag to v1.21.9 ([#3384](https://github.com/prakrit55/lifecycle-toolkit/issues/3384)) ([e4f1a6a](https://github.com/prakrit55/lifecycle-toolkit/commit/e4f1a6adefc2670a6c18efbaf416aee80eb2584a))
+* update golang.org/x/exp digest to 02704c9 ([#2732](https://github.com/prakrit55/lifecycle-toolkit/issues/2732)) ([57f57db](https://github.com/prakrit55/lifecycle-toolkit/commit/57f57db802b4d7cddbff4c4e487810d07ec8fcd0))
+* update golang.org/x/exp digest to 0dcbfd6 ([#2783](https://github.com/prakrit55/lifecycle-toolkit/issues/2783)) ([2cd4491](https://github.com/prakrit55/lifecycle-toolkit/commit/2cd4491fa49876534b0f5344c1e3dd4fcab7e540))
+* update golang.org/x/exp digest to 1b97071 ([#2844](https://github.com/prakrit55/lifecycle-toolkit/issues/2844)) ([99dabcb](https://github.com/prakrit55/lifecycle-toolkit/commit/99dabcbe1784d557bef474619f08fd6b0adde7fb))
+* update golang.org/x/exp digest to 2c58cdc ([#2971](https://github.com/prakrit55/lifecycle-toolkit/issues/2971)) ([fddbce7](https://github.com/prakrit55/lifecycle-toolkit/commit/fddbce72ea68e3f507adf61d76f259eab4303cdb))
+* update golang.org/x/exp digest to 814bf88 ([#3109](https://github.com/prakrit55/lifecycle-toolkit/issues/3109)) ([8610295](https://github.com/prakrit55/lifecycle-toolkit/commit/86102953785511b8ae73e56820aa5d796c357a2d))
+* update golang.org/x/exp digest to 93d18d7 ([#3400](https://github.com/prakrit55/lifecycle-toolkit/issues/3400)) ([5a9e73b](https://github.com/prakrit55/lifecycle-toolkit/commit/5a9e73b6296b4aea435979aa2f2a2b70e1241628))
+* update golang.org/x/exp digest to a685a6e ([#3346](https://github.com/prakrit55/lifecycle-toolkit/issues/3346)) ([f0e7571](https://github.com/prakrit55/lifecycle-toolkit/commit/f0e7571054f9bf5ecb9d5c01f471da76d75ea488))
+* update golang.org/x/exp digest to a85f2c6 ([#3288](https://github.com/prakrit55/lifecycle-toolkit/issues/3288)) ([62a8c14](https://github.com/prakrit55/lifecycle-toolkit/commit/62a8c14a06ec81b6a42450195d9ff341f7aaff41))
+* update golang.org/x/exp digest to be819d1 ([#2761](https://github.com/prakrit55/lifecycle-toolkit/issues/2761)) ([b7ce57f](https://github.com/prakrit55/lifecycle-toolkit/commit/b7ce57f45dcc52f7306159972d58c5ce75a4e094))
+* update golang.org/x/exp digest to c0f41cb ([#3389](https://github.com/prakrit55/lifecycle-toolkit/issues/3389)) ([4407d07](https://github.com/prakrit55/lifecycle-toolkit/commit/4407d077084e968184d9c1b3d96746019bb6db4c))
+* update golang.org/x/exp digest to c7f7c64 ([#3272](https://github.com/prakrit55/lifecycle-toolkit/issues/3272)) ([a2f0f00](https://github.com/prakrit55/lifecycle-toolkit/commit/a2f0f00172e379d64c47b99b4b9ef7181fac321c))
+* update golang.org/x/exp digest to db7319d ([#2791](https://github.com/prakrit55/lifecycle-toolkit/issues/2791)) ([66f199a](https://github.com/prakrit55/lifecycle-toolkit/commit/66f199a7ab54eb8c9b8160cbe021d81306c7927a))
+* update golang.org/x/exp digest to dc181d7 ([#2707](https://github.com/prakrit55/lifecycle-toolkit/issues/2707)) ([8f3f25b](https://github.com/prakrit55/lifecycle-toolkit/commit/8f3f25b44d4f606cb2dbb5dcfaa219b5508f6c75))
+* update golang.org/x/exp digest to ec58324 ([#3043](https://github.com/prakrit55/lifecycle-toolkit/issues/3043)) ([d736aef](https://github.com/prakrit55/lifecycle-toolkit/commit/d736aefcd323b144bd2771ffd7677c03aa57be0a))
+* update golang.org/x/exp digest to fe59bbe ([#3427](https://github.com/prakrit55/lifecycle-toolkit/issues/3427)) ([f1a17ff](https://github.com/prakrit55/lifecycle-toolkit/commit/f1a17ffd5163a6aa048724eaa017c51fa42b35b2))
+* update helm release common to v0.1.4 ([#3114](https://github.com/prakrit55/lifecycle-toolkit/issues/3114)) ([12b2e58](https://github.com/prakrit55/lifecycle-toolkit/commit/12b2e58e085fd40cf5c04ca0e5eb071823777701))
+* update keptn/common helm chart to 0.1.3 ([#2831](https://github.com/prakrit55/lifecycle-toolkit/issues/2831)) ([29187fa](https://github.com/prakrit55/lifecycle-toolkit/commit/29187fa7eeab148b7188b4c3f05317cc291c15e4))
+* update kubernetes packages to v0.28.5 (patch) ([#2714](https://github.com/prakrit55/lifecycle-toolkit/issues/2714)) ([192c0b1](https://github.com/prakrit55/lifecycle-toolkit/commit/192c0b16fc0852dca572448d8caeb113b0e21d40))
+* update kubernetes packages to v0.28.6 (patch) ([#2827](https://github.com/prakrit55/lifecycle-toolkit/issues/2827)) ([da080fa](https://github.com/prakrit55/lifecycle-toolkit/commit/da080fafadef25028f9e4b1a78d8a862e58b47e7))
+* update kubernetes packages to v0.28.7 (patch) ([#3062](https://github.com/prakrit55/lifecycle-toolkit/issues/3062)) ([8698803](https://github.com/prakrit55/lifecycle-toolkit/commit/8698803ff60b71d658d60bfc0c6b8b3d4282798d))
+* update kubernetes packages to v0.28.8 (patch) ([#3300](https://github.com/prakrit55/lifecycle-toolkit/issues/3300)) ([435e722](https://github.com/prakrit55/lifecycle-toolkit/commit/435e722776b69c6e7acbf3631d81cdeafc9815ec))
+* update module github.com/datadog/datadog-api-client-go/v2 to v2.21.0 ([#2796](https://github.com/prakrit55/lifecycle-toolkit/issues/2796)) ([456ff57](https://github.com/prakrit55/lifecycle-toolkit/commit/456ff570840ce27e9959d0aead34f70fba9a48da))
+* update module github.com/datadog/datadog-api-client-go/v2 to v2.22.0 ([#3044](https://github.com/prakrit55/lifecycle-toolkit/issues/3044)) ([c125e95](https://github.com/prakrit55/lifecycle-toolkit/commit/c125e95bd749c9460c5d984f21562ae6879a8b67))
+* update module github.com/datadog/datadog-api-client-go/v2 to v2.23.0 ([#3166](https://github.com/prakrit55/lifecycle-toolkit/issues/3166)) ([286d452](https://github.com/prakrit55/lifecycle-toolkit/commit/286d4526305dad4f8c120648436c134c4a565fbf))
+* update module github.com/datadog/datadog-api-client-go/v2 to v2.24.0 ([#3316](https://github.com/prakrit55/lifecycle-toolkit/issues/3316)) ([aec937d](https://github.com/prakrit55/lifecycle-toolkit/commit/aec937d34600be76c05e8545d16a1602fda5b761))
+* update module github.com/datadog/datadog-api-client-go/v2 to v2.25.0 ([#3429](https://github.com/prakrit55/lifecycle-toolkit/issues/3429)) ([c49ac77](https://github.com/prakrit55/lifecycle-toolkit/commit/c49ac77ba3e54a7f037542fce26111f32466836a))
+* update module github.com/go-logr/logr to v1.4.1 ([#2726](https://github.com/prakrit55/lifecycle-toolkit/issues/2726)) ([3598999](https://github.com/prakrit55/lifecycle-toolkit/commit/3598999e1cfce6ee528fb5fb777c0b7b7c21678a))
+* update module github.com/keptn/lifecycle-toolkit/keptn-cert-manager to v0.8.0 ([#2974](https://github.com/prakrit55/lifecycle-toolkit/issues/2974)) ([cd36e8d](https://github.com/prakrit55/lifecycle-toolkit/commit/cd36e8df8a7fabfbbe443200f4659c0b0a8be937))
+* update module github.com/keptn/lifecycle-toolkit/keptn-cert-manager to v0.8.0 ([#3047](https://github.com/prakrit55/lifecycle-toolkit/issues/3047)) ([d6b4a64](https://github.com/prakrit55/lifecycle-toolkit/commit/d6b4a642298586dccab464486de45906364a7898))
+* update module github.com/keptn/lifecycle-toolkit/keptn-cert-manager to v0.8.0 ([#3158](https://github.com/prakrit55/lifecycle-toolkit/issues/3158)) ([d775416](https://github.com/prakrit55/lifecycle-toolkit/commit/d775416edcc5519a7134c2b52a13b469d883890f))
+* update module github.com/keptn/lifecycle-toolkit/keptn-cert-manager to v0.8.0 ([#3167](https://github.com/prakrit55/lifecycle-toolkit/issues/3167)) ([7ad3344](https://github.com/prakrit55/lifecycle-toolkit/commit/7ad3344e555e848fb38ac55d7e521700a9a33f9f))
+* update module github.com/keptn/lifecycle-toolkit/keptn-cert-manager to v2.0.0 ([#2668](https://github.com/prakrit55/lifecycle-toolkit/issues/2668)) ([be6523b](https://github.com/prakrit55/lifecycle-toolkit/commit/be6523b39b431e9c1cfac51ac553c4c71e0ad4a1))
+* update module github.com/open-feature/go-sdk to v1.10.0 ([#3048](https://github.com/prakrit55/lifecycle-toolkit/issues/3048)) ([073af41](https://github.com/prakrit55/lifecycle-toolkit/commit/073af411ab39337e03deecd0c9daa791562358e0))
+* update module github.com/open-feature/go-sdk to v1.11.0 ([#3430](https://github.com/prakrit55/lifecycle-toolkit/issues/3430)) ([3d3e4f1](https://github.com/prakrit55/lifecycle-toolkit/commit/3d3e4f18ff5a83405f6a4bbed6f3a1dbdc8eea33))
+* update module github.com/prometheus/client_golang to v1.18.0 ([#2764](https://github.com/prakrit55/lifecycle-toolkit/issues/2764)) ([67fa60b](https://github.com/prakrit55/lifecycle-toolkit/commit/67fa60b8581fee0b6200f8f877b396a39df32d58))
+* update module github.com/prometheus/client_model to v0.6.0 ([#3089](https://github.com/prakrit55/lifecycle-toolkit/issues/3089)) ([dcc8a47](https://github.com/prakrit55/lifecycle-toolkit/commit/dcc8a47d6551c720250743d09b2a210be3a9f46f))
+* update module github.com/prometheus/client_model to v0.6.1 ([#3383](https://github.com/prakrit55/lifecycle-toolkit/issues/3383)) ([db45f5c](https://github.com/prakrit55/lifecycle-toolkit/commit/db45f5c3dda8da2f010d0690421d4b1169310624))
+* update module github.com/prometheus/common to v0.46.0 ([#2818](https://github.com/prakrit55/lifecycle-toolkit/issues/2818)) ([16e1f86](https://github.com/prakrit55/lifecycle-toolkit/commit/16e1f8690ac786e3f831d18f87dfb0a0bf8d9b16))
+* update module github.com/prometheus/common to v0.47.0 ([#3064](https://github.com/prakrit55/lifecycle-toolkit/issues/3064)) ([8d483e4](https://github.com/prakrit55/lifecycle-toolkit/commit/8d483e4a0ed95bf8319bc74ecff7268109428d51))
+* update module github.com/stretchr/testify to v1.9.0 ([#3171](https://github.com/prakrit55/lifecycle-toolkit/issues/3171)) ([d334790](https://github.com/prakrit55/lifecycle-toolkit/commit/d3347903ad91c33ba4bf664277c53024eb02825a))
+* update module go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc to v0.47.0 ([#2857](https://github.com/prakrit55/lifecycle-toolkit/issues/2857)) ([4ee5938](https://github.com/prakrit55/lifecycle-toolkit/commit/4ee5938a531f43ccd492d3fd05939178507c4c09))
+* update module go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc to v0.48.0 ([#3049](https://github.com/prakrit55/lifecycle-toolkit/issues/3049)) ([d87ab73](https://github.com/prakrit55/lifecycle-toolkit/commit/d87ab7319146d2ad7bfacd9a2bdc37b311bd11bc))
+* update module go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc to v0.49.0 ([#3127](https://github.com/prakrit55/lifecycle-toolkit/issues/3127)) ([cd9501b](https://github.com/prakrit55/lifecycle-toolkit/commit/cd9501ba1ef2712b540355f6dbfbf4d22aa00566))
+* update module go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc to v0.50.0 ([#3405](https://github.com/prakrit55/lifecycle-toolkit/issues/3405)) ([f8e5d95](https://github.com/prakrit55/lifecycle-toolkit/commit/f8e5d954cba13a5b9258fc268c3a6a3803088678))
+* update module go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp to v0.47.0 ([#2864](https://github.com/prakrit55/lifecycle-toolkit/issues/2864)) ([155bc02](https://github.com/prakrit55/lifecycle-toolkit/commit/155bc0273b24887a37429a59f9dd874a58dba09d))
+* update module go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp to v0.48.0 ([#3090](https://github.com/prakrit55/lifecycle-toolkit/issues/3090)) ([733a3ea](https://github.com/prakrit55/lifecycle-toolkit/commit/733a3ea4e0fd5e6c59874a1a1d1ba419ae679dd5))
+* update module go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp to v0.49.0 ([#3128](https://github.com/prakrit55/lifecycle-toolkit/issues/3128)) ([a7c0b86](https://github.com/prakrit55/lifecycle-toolkit/commit/a7c0b86b60aef7b2b22834e3757ad8af0fc2dbd3))
+* update module golang.org/x/net to v0.20.0 ([#2786](https://github.com/prakrit55/lifecycle-toolkit/issues/2786)) ([8294c7b](https://github.com/prakrit55/lifecycle-toolkit/commit/8294c7b471d7f4d33961513e056c36ba14c940c7))
+* update module golang.org/x/net to v0.21.0 ([#3091](https://github.com/prakrit55/lifecycle-toolkit/issues/3091)) ([44489ea](https://github.com/prakrit55/lifecycle-toolkit/commit/44489ea8909c5c81a2115b952bba9e3416ddd85e))
+* update module golang.org/x/net to v0.22.0 ([#3341](https://github.com/prakrit55/lifecycle-toolkit/issues/3341)) ([d58df5c](https://github.com/prakrit55/lifecycle-toolkit/commit/d58df5cac90241f625e05e68ec157827c2d85bbd))
+* update module k8s.io/apimachinery to v0.28.9 ([#3433](https://github.com/prakrit55/lifecycle-toolkit/issues/3433)) ([a75d65e](https://github.com/prakrit55/lifecycle-toolkit/commit/a75d65e6528509276af4060aea6f85a02d03ad30))
+* update module k8s.io/klog/v2 to v2.120.0 ([#2794](https://github.com/prakrit55/lifecycle-toolkit/issues/2794)) ([e2c2cff](https://github.com/prakrit55/lifecycle-toolkit/commit/e2c2cffa18c9787a4b3f05b0982d8442d4621f59))
+* update module k8s.io/klog/v2 to v2.120.1 ([#2854](https://github.com/prakrit55/lifecycle-toolkit/issues/2854)) ([5982d73](https://github.com/prakrit55/lifecycle-toolkit/commit/5982d73e693e55cba07892c6870d3906a16b78b6))
+* update module sigs.k8s.io/controller-runtime to v0.16.4 ([#3033](https://github.com/prakrit55/lifecycle-toolkit/issues/3033)) ([f576707](https://github.com/prakrit55/lifecycle-toolkit/commit/f57670729a18cfdb391c3af5ffdd92de6a330ee5))
+* update module sigs.k8s.io/controller-runtime to v0.16.5 ([#3073](https://github.com/prakrit55/lifecycle-toolkit/issues/3073)) ([599e2d8](https://github.com/prakrit55/lifecycle-toolkit/commit/599e2d8712ed7d7b614026a0038d238ed0833b37))
+* update opentelemetry-go monorepo (minor) ([#2865](https://github.com/prakrit55/lifecycle-toolkit/issues/2865)) ([be0ecde](https://github.com/prakrit55/lifecycle-toolkit/commit/be0ecde8088af5e4a43d01951f6b7f354267308d))
+* update opentelemetry-go monorepo (minor) ([#3129](https://github.com/prakrit55/lifecycle-toolkit/issues/3129)) ([513986d](https://github.com/prakrit55/lifecycle-toolkit/commit/513986d4e6bb481906ecba33b19da85ffe5b7e5d))
+* update opentelemetry-go monorepo (minor) ([#3408](https://github.com/prakrit55/lifecycle-toolkit/issues/3408)) ([15ebf45](https://github.com/prakrit55/lifecycle-toolkit/commit/15ebf45f382f8661abc15d7ae71feeea57126431))
+* update opentelemetry-go monorepo to v1.23.1 (minor) ([#3092](https://github.com/prakrit55/lifecycle-toolkit/issues/3092)) ([ac71144](https://github.com/prakrit55/lifecycle-toolkit/commit/ac711443311ee241c58125944bee4a7ffc10d026))
+
 ## [0.9.3](https://github.com/keptn/lifecycle-toolkit/compare/metrics-operator-v0.9.2...metrics-operator-v0.9.3) (2024-03-19)
 
 
