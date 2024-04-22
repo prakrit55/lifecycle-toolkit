@@ -1,5 +1,51 @@
 # Changelog
 
+## [0.9.3](https://github.com/prakrit55/lifecycle-toolkit/compare/scheduler-v0.9.2...scheduler-v0.9.3) (2024-04-22)
+
+
+### Bug Fixes
+
+* introduce missing Role into keptn-cert-manager helm charts ([#3435](https://github.com/prakrit55/lifecycle-toolkit/issues/3435)) ([16afdaa](https://github.com/prakrit55/lifecycle-toolkit/commit/16afdaaf4ae56179d0f725ae9f9e9ae96709f042))
+* security vulnerabilities ([#3230](https://github.com/prakrit55/lifecycle-toolkit/issues/3230)) ([1d099d7](https://github.com/prakrit55/lifecycle-toolkit/commit/1d099d7a4c9b5e856de52932693b97c29bea3122))
+
+
+### Other
+
+* bump Go base images and pipelines version to 1.21 ([#3218](https://github.com/prakrit55/lifecycle-toolkit/issues/3218)) ([de01ca4](https://github.com/prakrit55/lifecycle-toolkit/commit/de01ca493b307d8c27701552549b982e22281a2e))
+* bump go version to 1.21 ([#3006](https://github.com/prakrit55/lifecycle-toolkit/issues/3006)) ([8236c25](https://github.com/prakrit55/lifecycle-toolkit/commit/8236c25da7ec3768e76d12eb2e8f5765a005ecfa))
+* release scheduler 0.9.0 ([#2401](https://github.com/prakrit55/lifecycle-toolkit/issues/2401)) ([37dcb6f](https://github.com/prakrit55/lifecycle-toolkit/commit/37dcb6f4730477d927fe2b742c9e28848de3c7d2))
+* release scheduler 0.9.1 ([#3022](https://github.com/prakrit55/lifecycle-toolkit/issues/3022)) ([aeafbb9](https://github.com/prakrit55/lifecycle-toolkit/commit/aeafbb992b8844f561d7a9992e7210765a5baf49))
+* release scheduler 0.9.2 ([#3228](https://github.com/prakrit55/lifecycle-toolkit/issues/3228)) ([998c6a9](https://github.com/prakrit55/lifecycle-toolkit/commit/998c6a9c0e6f11713b99113420276436be694159))
+* **scheduler:** adapt namespace name ([#2742](https://github.com/prakrit55/lifecycle-toolkit/issues/2742)) ([c415615](https://github.com/prakrit55/lifecycle-toolkit/commit/c41561566a884c27d433ab589db9659a3035e703))
+
+
+### Dependency Updates
+
+* bump golang.org/x/net to v0.23.0 ([#3388](https://github.com/prakrit55/lifecycle-toolkit/issues/3388)) ([e9c1dda](https://github.com/prakrit55/lifecycle-toolkit/commit/e9c1dda3489117422160d53467d2155b1ca2bad3))
+* update dependency kubernetes-sigs/kustomize to v5.4.1 ([#3394](https://github.com/prakrit55/lifecycle-toolkit/issues/3394)) ([2dda172](https://github.com/prakrit55/lifecycle-toolkit/commit/2dda17232aab5542929a5fa73378cd2399a2f5e5))
+* update golang docker tag to v1.21.9 ([#3384](https://github.com/prakrit55/lifecycle-toolkit/issues/3384)) ([e4f1a6a](https://github.com/prakrit55/lifecycle-toolkit/commit/e4f1a6adefc2670a6c18efbaf416aee80eb2584a))
+* update module github.com/onsi/ginkgo/v2 to v2.14.0 ([#2808](https://github.com/prakrit55/lifecycle-toolkit/issues/2808)) ([17b0cb1](https://github.com/prakrit55/lifecycle-toolkit/commit/17b0cb1314778f5f1b65f4d1029ecca41bb50d3a))
+* update module github.com/onsi/ginkgo/v2 to v2.15.0 ([#2855](https://github.com/prakrit55/lifecycle-toolkit/issues/2855)) ([1c4f410](https://github.com/prakrit55/lifecycle-toolkit/commit/1c4f410f5571f02254eda4c5027c8a5e3822b28e))
+* update module github.com/onsi/ginkgo/v2 to v2.16.0 ([#3319](https://github.com/prakrit55/lifecycle-toolkit/issues/3319)) ([10bc1c0](https://github.com/prakrit55/lifecycle-toolkit/commit/10bc1c02759f6eebe4f30812f868a9e6465c5e3d))
+* update module github.com/onsi/ginkgo/v2 to v2.17.0 ([#3339](https://github.com/prakrit55/lifecycle-toolkit/issues/3339)) ([997a63c](https://github.com/prakrit55/lifecycle-toolkit/commit/997a63cbeb8e7707a9c7c6fb21a1f6feabb75e1d))
+* update module github.com/onsi/ginkgo/v2 to v2.17.1 ([#3363](https://github.com/prakrit55/lifecycle-toolkit/issues/3363)) ([a34b8e5](https://github.com/prakrit55/lifecycle-toolkit/commit/a34b8e5959f775fe632cad1b7c74f6de46ff9aa0))
+* update module github.com/onsi/gomega to v1.31.1 ([#2856](https://github.com/prakrit55/lifecycle-toolkit/issues/2856)) ([d0817a7](https://github.com/prakrit55/lifecycle-toolkit/commit/d0817a7118e58af5326a43f1a059f2eddfa36215))
+* update module github.com/stretchr/testify to v1.9.0 ([#3171](https://github.com/prakrit55/lifecycle-toolkit/issues/3171)) ([d334790](https://github.com/prakrit55/lifecycle-toolkit/commit/d3347903ad91c33ba4bf664277c53024eb02825a))
+* update module golang.org/x/net to v0.20.0 ([#2786](https://github.com/prakrit55/lifecycle-toolkit/issues/2786)) ([8294c7b](https://github.com/prakrit55/lifecycle-toolkit/commit/8294c7b471d7f4d33961513e056c36ba14c940c7))
+* update module golang.org/x/net to v0.21.0 ([#3091](https://github.com/prakrit55/lifecycle-toolkit/issues/3091)) ([44489ea](https://github.com/prakrit55/lifecycle-toolkit/commit/44489ea8909c5c81a2115b952bba9e3416ddd85e))
+* update module golang.org/x/net to v0.22.0 ([#3341](https://github.com/prakrit55/lifecycle-toolkit/issues/3341)) ([d58df5c](https://github.com/prakrit55/lifecycle-toolkit/commit/d58df5cac90241f625e05e68ec157827c2d85bbd))
+* update module golang.org/x/net to v0.24.0 ([#3395](https://github.com/prakrit55/lifecycle-toolkit/issues/3395)) ([16d436c](https://github.com/prakrit55/lifecycle-toolkit/commit/16d436c84f92aea191e0503f4dc1fa058bc1f083))
+* update module google.golang.org/grpc to v1.60.1 ([#2724](https://github.com/prakrit55/lifecycle-toolkit/issues/2724)) ([31d69dd](https://github.com/prakrit55/lifecycle-toolkit/commit/31d69dd33df76f0a5f9b2d46af822e5f43e681a5))
+* update module google.golang.org/grpc to v1.61.0 ([#2888](https://github.com/prakrit55/lifecycle-toolkit/issues/2888)) ([7a56cbd](https://github.com/prakrit55/lifecycle-toolkit/commit/7a56cbd1f528bb73c1070611d6b28005c875fe36))
+* update module google.golang.org/grpc to v1.61.1 ([#3072](https://github.com/prakrit55/lifecycle-toolkit/issues/3072)) ([3c9d1f3](https://github.com/prakrit55/lifecycle-toolkit/commit/3c9d1f3bb7dd7ebfda56563a235ff8c8ce6c61f6))
+* update module google.golang.org/grpc to v1.62.0 ([#3119](https://github.com/prakrit55/lifecycle-toolkit/issues/3119)) ([ea061db](https://github.com/prakrit55/lifecycle-toolkit/commit/ea061dbb272f3fa3bf0ce99bd33617bc1dc98a18))
+* update module google.golang.org/grpc to v1.62.1 ([#3281](https://github.com/prakrit55/lifecycle-toolkit/issues/3281)) ([f86c49a](https://github.com/prakrit55/lifecycle-toolkit/commit/f86c49a8e4a72ceccab95f15d0dcde2a4e7dbfb0))
+* update module google.golang.org/grpc to v1.62.2 ([#3391](https://github.com/prakrit55/lifecycle-toolkit/issues/3391)) ([213204b](https://github.com/prakrit55/lifecycle-toolkit/commit/213204b9685ac355f42701ece024c7df18bf4308))
+* update module google.golang.org/grpc to v1.63.2 ([#3422](https://github.com/prakrit55/lifecycle-toolkit/issues/3422)) ([7da06b7](https://github.com/prakrit55/lifecycle-toolkit/commit/7da06b74b2cd28fb5a092d4b2028c1bed99b01a3))
+* update module k8s.io/klog/v2 to v2.120.0 ([#2794](https://github.com/prakrit55/lifecycle-toolkit/issues/2794)) ([e2c2cff](https://github.com/prakrit55/lifecycle-toolkit/commit/e2c2cffa18c9787a4b3f05b0982d8442d4621f59))
+* update module k8s.io/klog/v2 to v2.120.1 ([#2854](https://github.com/prakrit55/lifecycle-toolkit/issues/2854)) ([5982d73](https://github.com/prakrit55/lifecycle-toolkit/commit/5982d73e693e55cba07892c6870d3906a16b78b6))
+* update opentelemetry-go monorepo (minor) ([#3408](https://github.com/prakrit55/lifecycle-toolkit/issues/3408)) ([15ebf45](https://github.com/prakrit55/lifecycle-toolkit/commit/15ebf45f382f8661abc15d7ae71feeea57126431))
+
 ## [0.9.2](https://github.com/keptn/lifecycle-toolkit/compare/scheduler-v0.9.1...scheduler-v0.9.2) (2024-03-19)
 
 
