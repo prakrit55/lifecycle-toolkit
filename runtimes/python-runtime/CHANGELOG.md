@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.0.5](https://github.com/prakrit55/lifecycle-toolkit/compare/python-runtime-v1.0.4...python-runtime-v1.0.5) (2024-04-22)
+
+
+### Bug Fixes
+
+* **python-runtime:** bump libexpat to v2.6.2 ([#3276](https://github.com/prakrit55/lifecycle-toolkit/issues/3276)) ([8ceae7e](https://github.com/prakrit55/lifecycle-toolkit/commit/8ceae7ef11443aea87d8c87e5643a987d3479f32))
+
+
+### Other
+
+* **python-runtime:** pin libexpat version to fix CVE-2023-52425 ([#3142](https://github.com/prakrit55/lifecycle-toolkit/issues/3142)) ([79870f4](https://github.com/prakrit55/lifecycle-toolkit/commit/79870f459fc9da854c3f8ad6152768b3ab5ead46))
+* release python-runtime 1.0.2 ([#2591](https://github.com/prakrit55/lifecycle-toolkit/issues/2591)) ([45ee412](https://github.com/prakrit55/lifecycle-toolkit/commit/45ee412a98340b02f4ae72935372bbeb9e25c7d0))
+* release python-runtime 1.0.3 ([#2998](https://github.com/prakrit55/lifecycle-toolkit/issues/2998)) ([678cddd](https://github.com/prakrit55/lifecycle-toolkit/commit/678cddd2ef1693023aaf99cf8bba435b0c6856a1))
+* release python-runtime 1.0.4 ([#3277](https://github.com/prakrit55/lifecycle-toolkit/issues/3277)) ([4a9f940](https://github.com/prakrit55/lifecycle-toolkit/commit/4a9f940ce66b092cfceecc416bb806c23ef8eab6))
+
+
+### Dependency Updates
+
+* update python docker tag to v3.12.2 ([#2986](https://github.com/prakrit55/lifecycle-toolkit/issues/2986)) ([7e5c3dd](https://github.com/prakrit55/lifecycle-toolkit/commit/7e5c3dd0b6d65397c4184cecb1a88f0baaf5b5ab))
+* update python docker tag to v3.12.3 ([#3406](https://github.com/prakrit55/lifecycle-toolkit/issues/3406)) ([850bc4a](https://github.com/prakrit55/lifecycle-toolkit/commit/850bc4abae1b1bf52e10d45e30ffcf00fa2547a4))
+
 ## [1.0.4](https://github.com/keptn/lifecycle-toolkit/compare/python-runtime-v1.0.3...python-runtime-v1.0.4) (2024-03-19)
 
 
