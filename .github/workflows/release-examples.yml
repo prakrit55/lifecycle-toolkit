@@ -33,7 +33,7 @@ jobs:
         with:
           repository: keptn-sandbox/lifecycle-toolkit-examples
           path: ${{ inputs.examples_dir }}
-          token: ${{ secrets.KEPTN_BOT_TOKEN }}
+          token: ${{ secrets._GITHUB_TOKEN }}
 
       - name: Get Latest Release Information
         uses: octokit/request-action@21d174fc38ff59af9cf4d7e07347d29df6dbaa99 # v2.3.0
@@ -43,7 +43,7 @@ jobs:
           repository: lifecycle-toolkit
           owner: keptn
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets._GITHUB_TOKEN }}
 
       - name: Move old latest release examples folder
         if: ${{ fromJson(steps.latest_release.outputs.data).tag_name == inputs.tag_name }}
